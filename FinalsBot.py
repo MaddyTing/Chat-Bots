@@ -1,4 +1,5 @@
 import random
+import time
 
 print("Hi! I'm your friendly next door neighbor, Chat Bot! What's your name?")
 name = input("What's your name?")
@@ -57,6 +58,7 @@ if(guess == "Yes" or guess == "yes"):
             print("Oh jeez, that means you have them this month. " + bestofluck)
 else:
     print("Aww, okay. T^T I'm sad now.")
+    print("Just kidding! It's okay, I forgive you.")
     
 adj2 = random.choice(["super fun", "amazing", "great", "wonderful", "awesome", "fun", "enlightening"])
 
