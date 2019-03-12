@@ -4,7 +4,7 @@ print("Hi there! What's your name?")
 
 name = input("My name is ")
 
-print("Nice to meet you " + name + ".\n")
+print("Nice to meet you " + name + ". I'm WeatherBot! \n")
 
 life = input("How's life? Good? ")
 
