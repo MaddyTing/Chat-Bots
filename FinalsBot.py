@@ -18,6 +18,7 @@ print("Hi! I'm your friendly next door neighbor, Chat Bot! What's your name?")
 #ASK NAME
 
 name = input("What's your name?")
+name = name.capitalize()
 
 print("\n--- " + name + "\n")
 
