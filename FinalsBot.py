@@ -4,8 +4,13 @@ import random
 import time
 
 #VARIABLES (order of first appearance)
+#Intro / Doing Well in School Variables
 nameadj = random.choice(["an amazing", "a wonderful", "an awesome", "a pretty", "a cool", "a beautiful"])
 adj = random.choice(["amazing", "wonderful", "intelligent", "awesome", "determined", "cool", "courageous"])
+schooladj = random.choice(["amazing", "wonderful", "intelligent", "super smart", "awesome", "determined", "cool", "courageous"])
+
+#Finals Variables
+encourage = random.choice(["Ahh, good luck!", "You'll do amazing!", "I believe in you!", "Finals are easy for an amazing person like you!", "It'll all be over soon.", "Finals are a drag, but you got this!"])
 sympathy = random.choice(["Aww, I'm sorry to hear that.", "Oof, that sucks...", "That's harsh.", "Ah, I know how you feel."])
 bestofluck = random.choice(["\nBest of luck to you mate.", "\nBest of luck!", "\nHope you do well!", "\nGood luck!", " ", " "])
 
@@ -34,8 +39,7 @@ print("\n--- " + school + "\n")
 if(school == "Yes" or school == "yes"):
     print("That's great to hear! I knew you could do it 'cuz you're " + adj + "!")
 elif(school != "Yes" or school != "yes"):
-    adj = random.choice(["amazing", "wonderful", "intelligent", "super smart", "awesome", "determined", "cool", "courageous"])
-    print(sympathy + " \nBut don't worry! \nYou're " + adj + ", so I know you'll be saying yes in no time!")
+    print(sympathy + " \nBut don't worry! \nYou're " + schooladj + ", so I know you'll be saying yes in no time!")
 
 #FINALS
 
@@ -43,7 +47,6 @@ print("\nDo you have finals coming up?")
 finals = input("Yes? No?")
 print("\n--- " + finals + "\n")
 if(finals == "Yes" or finals == "yes"):
-    encourage = random.choice(["Ahh, good luck!", "You'll do amazing!", "I believe in you!", "Finals are easy for an amazing person like you!", "It'll all be over soon.", "Finals are a drag, but you got this!"])
     print(encourage)
 elif(finals != "Yes" or finals != "yes"):
     lucky = random.choice(["Wow, lucky!", "You don't have to worry at all then!", "Haha, nice!", "Wish I was you :p"])
