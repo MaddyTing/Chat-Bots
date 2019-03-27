@@ -74,7 +74,7 @@ if(guess == "Yes" or guess == "yes"):
         print("Wow, I actually got it! Wasn't expecting that hahaha.")
         if(nummonths >= 4):
             print("So you have some time before finals! \n" + finalswarning)
-        if(nummonths <= 3):
+        elif(nummonths <= 3):
             print("Ooh, those are kind of close! Be careful; you can never be overprepared.")
     if(monthconfirm == "No" or monthconfirm == "no"):
         print("Aw, man. Well, you can't guess them all.")
@@ -83,11 +83,11 @@ if(guess == "Yes" or guess == "yes"):
         print("\n--- " + str(actualmonth) + "\n")
         if(actualmonth >= 4):
             print(str(actualmonth) + " months?? You've got plenty of time! \nThough you should start studying earlier rather than later.")
-        if(actualmonth <= 3 and actualmonth > 1):
+        elif(actualmonth <= 3 and actualmonth > 1):
             print(str(actualmonth) + " months isn't that long. Better start studying now!")
-        if(actualmonth == 1):
+        elif(actualmonth == 1):
             print("AHHH, 1 month?? That's not a long time until finals at all! " + bestofluck)
-        if(actualmonth == 0):
+        elif(actualmonth == 0):
             print("Oh jeez, that means you have them this month." + bestofluck)
 
 else:
@@ -101,7 +101,7 @@ if(finals == "Yes" or finals == "yes"):
     bonusshulk = random.randint(1, 10)
     if(bonusshulk == 8):
         print("\nThis is the " + name + "'s power! Acing finals!")
-    if(bonusshulk != 8):
+    elif(bonusshulk != 8):
         print(" ")
     print("\nIt was " + talkingtouseradj + " to talk to you! \nHope to see you again later! \nTell me how your final goes later :)")
 else:
