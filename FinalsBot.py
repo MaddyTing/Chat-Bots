@@ -3,6 +3,7 @@
 import random
 import time
 
+###########
 #VARIABLES (order of first appearance)
 #Intro / Doing Well in School Variables
 nameadj = random.choice(["an amazing", "a wonderful", "an awesome", "a pretty", "a cool", "a beautiful"])
@@ -13,7 +14,15 @@ schooladj = random.choice(["amazing", "wonderful", "intelligent", "super smart",
 encourage = random.choice(["Ahh, good luck!", "You'll do amazing!", "I believe in you!", "Finals are easy for an amazing person like you!", "It'll all be over soon.", "Finals are a drag, but you got this!"])
 sympathy = random.choice(["Aww, I'm sorry to hear that.", "Oof, that sucks...", "That's harsh.", "Ah, I know how you feel."])
 bestofluck = random.choice(["\nBest of luck to you mate.", "\nBest of luck!", "\nHope you do well!", "\nGood luck!", " ", " "])
+lucky = random.choice(["Wow, lucky!", "You don't have to worry at all then!", "Haha, nice!", "Wish I was you :p"])
 
+#Guessing Num Months Variables
+finalswarning = random.choice(["Though, it's better to get started studying earlier than later.", "Start studying now so you don't have a pileup of work later!", "You've got some time to chill then!", "Don't let your guard down though!", "Finals come up fast, so be careful."])
+
+#Outro Variables
+talkingtouseradj = random.choice(["super fun", "amazing", "great", "wonderful", "awesome", "fun", "enlightening"])
+
+#############
 
 #INTRO
 
@@ -49,7 +58,6 @@ print("\n--- " + finals + "\n")
 if(finals == "Yes" or finals == "yes"):
     print(encourage)
 elif(finals != "Yes" or finals != "yes"):
-    lucky = random.choice(["Wow, lucky!", "You don't have to worry at all then!", "Haha, nice!", "Wish I was you :p"])
     print(lucky)
     
 #GUESS # OF MONTHS UNTIL FINALS
@@ -65,7 +73,6 @@ if(guess == "Yes" or guess == "yes"):
     if(monthconfirm == "Yes" or monthconfirm == "yes"):
         print("Wow, I actually got it! Wasn't expecting that hahaha.")
         if(nummonths >= 4):
-            finalswarning = random.choice(["Though, it's better to get started studying earlier than later.", "Start studying now so you don't have a pileup of work later!", "You've got some time to chill then!", "Don't let your guard down though!", "Finals come up fast, so be careful."])
             print("So you have some time before finals! \n" + finalswarning)
         if(nummonths <= 3):
             print("Ooh, those are kind of close! Be careful; you can never be overprepared.")
@@ -75,7 +82,7 @@ if(guess == "Yes" or guess == "yes"):
         actualmonth = int(input("Hm?"))
         print("\n--- " + str(actualmonth) + "\n")
         if(actualmonth >= 4):
-            print(str(actualmonth) + " months?? You've got plenty of time! Though you should start studying earlier rather than later.")
+            print(str(actualmonth) + " months?? You've got plenty of time! \nThough you should start studying earlier rather than later.")
         if(actualmonth <= 3 and actualmonth > 1):
             print(str(actualmonth) + " months isn't that long. Better start studying now!")
         if(actualmonth == 1):
@@ -90,14 +97,12 @@ else:
     
 #GOODBYE
 
-adj2 = random.choice(["super fun", "amazing", "great", "wonderful", "awesome", "fun", "enlightening"])
-
 if(finals == "Yes" or finals == "yes"):
     bonusshulk = random.randint(1, 10)
     if(bonusshulk == 8):
         print("\nThis is the " + name + "'s power! Acing finals!")
     if(bonusshulk != 8):
         print(" ")
-    print("\nIt was " + adj2 + " to talk to you! \nHope to see you again later! \nTell me how your final goes later :)")
+    print("\nIt was " + talkingtouseradj + " to talk to you! \nHope to see you again later! \nTell me how your final goes later :)")
 else:
-    print("\nIt was " + adj2 + " to talk to you! \nHope to see you again later!")
+    print("\nIt was " + talkingtouseradj + " to talk to you! \nHope to see you again later!")
