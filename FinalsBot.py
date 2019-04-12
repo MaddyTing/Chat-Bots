@@ -1,3 +1,4 @@
+#Talk to me about finals and school!
 #CodeSkulptor3 Link: https://py3.codeskulptor.org/#user303_BEUZ17B1Tb_1.py
 
 #MODULES
