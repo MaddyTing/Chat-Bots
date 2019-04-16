@@ -17,14 +17,16 @@ if(fredtalk.find("Y") > -1 or fredtalk.find("y") > -1):
     print("\nWhat did he say to you?")
     
     # Listing Options
-    print("1: "
+    print("1: \"You need to go faster\"")
+    print("\n2: The 'I'm not mad, I'm just disappointed' face")
+    
     #list options
     fredsaid = int(input("O.o"))
     
     #template
     if(fredsaid == 1):
         optiona = "sadf"
-        print("\n--- Fred said, \"" + optiona + "\"")
+        print("\n--- Fred: \"" + optiona + "\"")
 
 
 else:
