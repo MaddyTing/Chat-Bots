@@ -1,12 +1,18 @@
+# DOESN'T WORK CURRENTLY WORKING ON
+
 # Talk to me about the 
 
 
-use in = input("hello!")
+hello = input("Hello there!")
 
-if(val.find ("hello")):
+if(hello.find ("hello")):
     print("nice to meet you!")
     day = input("having a good day?")
-    day = day.lower
-    if(day.find("no"):
-       print("aww")
+    
+    if(day.find("no")):
+        print("aww")
+    else:
+        print('Good to hear!')
+else:
+    print(":(")
     
