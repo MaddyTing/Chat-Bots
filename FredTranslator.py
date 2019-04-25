@@ -20,18 +20,17 @@ if(fredtalk.find("Y") > -1 or fredtalk.find("y") > -1):
     print("1: \"You need to go faster\"")
     print("\n2: The 'I'm not mad, I'm just disappointed' face")
     
-    #list options
+    # Select option
     fredsaid = int(input("O.o"))
     
-    #template
+    # Interprets Option
     if(fredsaid == 1):
         optiona = "sadf"
         print("\n--- Fred: \"" + optiona + "\"")
 
 
 else:
-    print("\nIf you didn't get a FredTalk, then why are you even here??")
-    print("\...I mean...I am the FredTranslator after all...")
+    print("\nIf you didn't get a FredTalk, then why are you even here??\n...I mean...I am the FredTranslator after all...")
     print("\nAnyway, you should be glad you've been spared...for now...")
 '''
     print("\n--- " + fredtalk)
