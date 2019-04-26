@@ -5,8 +5,8 @@
 
 print("Hey there! What's your name?")
 
-name = int(input("My name is..."))
+name = input("My name is..."))
 
-print("\n--- " + name)
+print("\n--- " + name.capitalize)
 
-print("Nice to meet you " + name.capitalize() + "! I'm your one and only FredQuoteGenerator.")
+print("\nNice to meet you " + name.capitalize() + "! I'm your one and only FredQuoteGenerator.")
