@@ -1,3 +1,5 @@
+# Translates Fred's words
+
 print("Hello there! What's your name?")
 
 name = input("My name is...")
